@@ -1,0 +1,62 @@
+body {	
+	background:#000000;
+	color:#fff;
+}
+.logo{
+	text-align: left;
+}
+
+.texto{
+	position: relative;
+	top:-150px;
+	right: -350px;
+}
+.texto h2{
+	position: relative;
+	top: 0px;
+	right: -200px;
+}
+
+.sociales{
+	position: relative;
+	top:-250px;
+	right: -900px;
+}
+.sociales li{
+	display: inline-block;
+}
+.sociales a{
+	padding: 20px;
+}
+
+.bienvenida{
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.galeria_titulo{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	text-shadow: 1px 2px 2px black,0 0 25px blue,0 0 5px blue;
+	text-align: center;
+}
+div.galeria{
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px 0 lightskyblue,0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float: left;
+	width: 350px
+}
+div.galeria img{
+	width: 100%;
+	height: auto;
+}
+div.galeria.hover{
+	border: 1px solid lightcoral;
+	transform: rotate(-3deg);
+}
+div.pie{
+	text-align: center;
+	text-shadow: 2px 2px 5px purple;
+	padding: 10px;
+}
