@@ -2,16 +2,27 @@ body {
 	background:#000000;
 	color:#fff;
 }
-.titulo logo{
-	text-align: left;
-}
 .titulo texto{
+	text-align: center;
+}
+.titulo h1{
+	color:red;
+	font-size: 150%;
+	text-align: center;
+}
+.titulo h2{
+	font-size: 100%;
+	text-align: center;
+}
+.titulo h3{
+	color:aqua;
+	font-size: 250%;
 	text-align: center;
 }
 .sociales{
 	text-align: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	box-sizing: border-box;
 }
 .sociales li{
@@ -23,36 +34,142 @@ body {
 
 .bienvenida{
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 0%;
 	box-sizing: border-box;
 }
 
-.galeria_titulo{
-	padding-top: 20px;
-	padding-bottom: 20px;
+
+.fotosTitulo{
+	padding-top: 1%;
+	padding-bottom: 0%;
 	color: white;
-	text-shadow: 1px 2px 2px black,0 0 25px blue,0 0 5px blue;
+	text-shadow: 1% 2% 2% black,0 0 25% blue,0 0 5% blue;
 	text-align: center;
 }
-div.galeria{
-	margin: 10px 20px;
-	box-shadow: 0 4px 8px 0 lightskyblue,0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	float: left;
-	width: 350px
+
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
 }
-div.galeria img{
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
 	width: 100%;
-	height: auto;
+	vertical-align: top;
 }
-div.galeria.hover{
-	border: 1px solid lightcoral;
-	transform: rotate(-3deg);
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
 }
-div.pie{
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	text-align: center;
-	text-shadow: 2px 2px 5px purple;
-	padding: 10px;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
 }
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+}
+
 
 .contenedor{
 	width: 100%;
