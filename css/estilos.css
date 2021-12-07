@@ -18,7 +18,7 @@ body {
 .proximamente {
 	background-color: red;
 	display: flex;
-	width: 100%;
+	width: 30%;
 	height: auto;
 	color: lightblue;
 	font-size: 400%;
