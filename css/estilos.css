@@ -25,7 +25,7 @@ body {
 	line-height: 130%;
 	font-style: oblique;
 	position: absolute;
-	top: -35%;
+	top: -62%;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -120,13 +120,11 @@ body {
 	max-width: 100%;
 	margin: 0 auto;
 }
-
 .slider {
 	position: relative;
 	height: 100%;
-	top: 0%
+	overflow hidden;
 }
-
 .slides {
 	position: relative;
 	display: flex;
@@ -151,11 +149,13 @@ body {
 .slide img {
 	width: 100%;
 	height: auto;
+	max-height: 100%;
 	vertical-align: top;
 }
 
 .slide a {
 	width: 100%;
+	max-height: 100%;
 	display: inline-block;
 	position: relative;
 }
@@ -176,7 +176,7 @@ body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 50;
+	z-index: 1000px;
 }
 
 .slider-controler {
@@ -187,7 +187,7 @@ body {
 	text-align: center;
 	padding: 5px;
 	background-color: rgba(0,0,0,0.5);
-	z-index: 100;
+	z-index: 1000x;
 }
 
 .slider-controler li {
@@ -240,6 +240,8 @@ p.mentores{
 	text-align: center;
 }
 p.texto_mentores{
+	padding-top: 3%;
+	padding-bottom: 3%;
 	text-align: center;
 	color:blue;
 }
