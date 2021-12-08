@@ -18,14 +18,14 @@ body {
 .proximamente {
 	background-color: red;
 	display: flex;
-	width: 80%;
-	height: 10%;
+	width: 70%;
+	height: 5%;
 	color: lightblue;
 	font-size: 400%;
 	line-height: 130%;
 	font-style: oblique;
 	position: absolute;
-	top: 0;
+	top: -35%;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -42,10 +42,10 @@ body {
 }
 
 @keyframes cambiar {
-	0%{margin-top: -2%;}
-	50%{margin-top: -2%;}
-	51%{margin-top: -15%;}
-	100%{margin-top: -15%;}
+	0%{margin-top: -1%;}
+	50%{margin-top: -1%;}
+	51%{margin-top: -13%;}
+	100%{margin-top: -13%;}
 }
 
 .sociales{
@@ -80,32 +80,32 @@ body {
 	0% { transform: translateX(0); }
 	11% { transform: translateX(0); }
 
-	12% { transform: translateX(-110%); }
-	23% { transform: translateX(-110%); }
+	12% { transform: translateX(-100%); }
+	23% { transform: translateX(-100%); }
 
-	24% { transform: translateX(-210%); }
-	35% { transform: translateX(-210%); }
+	24% { transform: translateX(-200%); }
+	35% { transform: translateX(-200%); }
 
-	36% { transform: translateX(-310%); }
-	47% { transform: translateX(-310%); }
+	36% { transform: translateX(-300%); }
+	47% { transform: translateX(-300%); }
 
-	48% { transform: translateX(-410%); }
-	59% { transform: translateX(-410%); }
+	48% { transform: translateX(-400%); }
+	59% { transform: translateX(-400%); }
 
-	60% { transform: translateX(-510%); }
-	66% { transform: translateX(-510%); }
+	60% { transform: translateX(-500%); }
+	66% { transform: translateX(-500%); }
 	
-	67% { transform: translateX(-610%); }
-	75% { transform: translateX(-610%); }
+	67% { transform: translateX(-600%); }
+	75% { transform: translateX(-600%); }
 	
-	76% { transform: translateX(-710%); }
-	84% { transform: translateX(-710%); }
+	76% { transform: translateX(-700%); }
+	84% { transform: translateX(-700%); }
 	
-	85% { transform: translateX(-810%); }
-	92% { transform: translateX(-810%); }
+	85% { transform: translateX(-800%); }
+	92% { transform: translateX(-800%); }
 		
-	93% { transform: translateX(-910%); }
-	100% { transform: translateX(-910%); }
+	93% { transform: translateX(-900%); }
+	100% { transform: translateX(-900%); }
 }
 
 * { box-sizing: border-box; }
@@ -124,6 +124,7 @@ body {
 .slider {
 	position: relative;
 	height: 100%;
+	top: 0%
 }
 
 .slides {
@@ -133,8 +134,9 @@ body {
 }
 
 .slide {
-	width: auto;
+	width: 100%;
 	height: auto;
+	max-height: 100%	;
 	flex-shrink: 0;
 	animation-name: slide;
 	animation-duration: 35s;
@@ -148,6 +150,7 @@ body {
 
 .slide img {
 	width: 100%;
+	height: auto;
 	vertical-align: top;
 }
 
