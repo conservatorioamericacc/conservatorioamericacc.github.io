@@ -38,10 +38,10 @@ body {
 }
 
 @keyframes cambiar {
-	0%{margin-top: -1%;}
-	50%{margin-top: -1%;}
-	51%{margin-top: -13%;}
-	100%{margin-top: -13%;}
+	0%{margin-top: -10%;}
+	50%{margin-top: -10%;}
+	51%{margin-top: -23%;}
+	100%{margin-top: -23%;}
 }
 
 .sociales{
