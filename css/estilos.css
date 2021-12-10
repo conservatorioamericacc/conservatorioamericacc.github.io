@@ -24,12 +24,12 @@ body {
 	font-size: 400%;
 	line-height: 130%;
 	font-style: oblique;
-
 	margin: auto;
 	overflow: hidden;
 }
 .proximamente ul{
 	list-style: none;
+	padding-top: 10%;
 	padding-left: 10%;
 	animation: cambiar 3s infinite;
 }
