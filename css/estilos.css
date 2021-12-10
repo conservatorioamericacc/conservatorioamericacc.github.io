@@ -24,11 +24,7 @@ body {
 	font-size: 400%;
 	line-height: 130%;
 	font-style: oblique;
-	position: absolute;
-	top: -55%;
-	bottom: 0;
-	right: 0;
-	left: 0;
+
 	margin: auto;
 	overflow: hidden;
 }
