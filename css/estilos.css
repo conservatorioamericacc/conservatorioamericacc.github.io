@@ -119,6 +119,17 @@ body {
 	100%{margin-left: -800%;}
 }
 
+.titulo_grabacion{
+	padding-top: 1%;
+	padding-bottom: 0%;
+	color: white;
+	text-shadow: 1% 2% 2% black,0 0 25% blue,0 0 5% blue;
+	text-align: center;
+}
+
+p.grabacion{
+	text-align: center;
+}
 
 
 .titulo_diplomas{
